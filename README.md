@@ -16,8 +16,8 @@ Dibuat untuk tugas proyek **Kriptografi**.
 ## Tech Stack
 
 - **Frontend**: Next.js 14 (App Router) + TypeScript
-- **Styling**: Tailwind CSS (Terminal / CRT aesthetic)
-- **Database**: Supabase (history log)
+- **Styling**: Tailwind CSS 
+- **Database**: Supabase
 - **Hosting**: Vercel
 
 ## Cara Menjalankan Lokal
@@ -56,14 +56,6 @@ npm run dev
 
 Buka [http://localhost:3000](http://localhost:3000)
 
-## Deploy ke Vercel
-
-1. Push code ke GitHub
-2. Import project di [vercel.com](https://vercel.com)
-3. Tambahkan environment variables di Vercel dashboard:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-4. Deploy!
 
 ## Contoh Penggunaan
 
@@ -97,7 +89,7 @@ Buka [http://localhost:3000](http://localhost:3000)
 ```
 src/
 ├── app/
-│   ├── page.tsx          # Main page dengan tab navigation
+│   ├── page.tsx          
 │   ├── layout.tsx        # Root layout
 │   └── globals.css       # Terminal theme CSS
 ├── components/

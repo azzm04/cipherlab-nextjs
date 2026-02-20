@@ -1,7 +1,7 @@
 # CipherLab — Classical Cryptography Suite
 
 Web-based calculator untuk enkripsi dan dekripsi menggunakan algoritma kriptografi klasik.
-Dibuat untuk tugas proyek **Kriptografi Klasik — Semester Genap 2025/2026**.
+Dibuat untuk tugas proyek **Kriptografi**.
 
 ## Fitur
 

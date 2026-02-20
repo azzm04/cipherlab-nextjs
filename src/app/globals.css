@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #111118;
+  --border: #1e1e2e;
+  --green: #00ff88;
+  --amber: #ffb700;
+  --cyan: #00d4ff;
+  --red: #ff4757;
+  --muted: #3a3a5c;
+  --text: #c8c8e8;
+  --dim: #6b6b9a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "IBM Plex Mono", monospace;
+  min-height: 100vh;
+}
+
+/* CRT scanline overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+/* Glow text effect */
+.glow-green {
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.7), 0 0 20px rgba(0, 255, 136, 0.4);
+}
+.glow-amber {
+  text-shadow: 0 0 10px rgba(255, 183, 0, 0.7);
+}
+.glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+/* Terminal input style */
+.terminal-input {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid var(--muted) !important;
+  color: var(--green) !important;
+  font-family: "Courier Prime", monospace !important;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: vertical;
+}
+.terminal-input:focus {
+  outline: none !important;
+  border-color: var(--green) !important;
+  box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.15), 0 0 15px rgba(0, 255, 136, 0.1);
+}
+.terminal-input::placeholder {
+  color: var(--dim);
+}
+
+/* Terminal button */
+.btn-terminal {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-terminal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.btn-terminal:hover::before {
+  opacity: 1;
+}
+
+/* Card */
+.terminal-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  position: relative;
+}
+.terminal-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+  opacity: 0.5;
+}
+
+/* Tab active */
+.tab-active {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+}
+
+/* Blinking cursor */
+.cursor::after {
+  content: "█";
+  animation: blink 1s step-end infinite;
+  color: var(--green);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Matrix-style digit rain (decorative) */
+@keyframes rain {
+  0% { transform: translateY(-100%); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}

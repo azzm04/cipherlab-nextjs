@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "online": "ONLINE",
+    "intro": "INTRO"
+  },
+  "tabs": {
+    "history": "History"
+  },
+  "banner": {
+    "activeModule": "Active Module"
+  },
+  "cipher": {
+    "algorithm": "Algorithm",
+    "formula": "Formula",
+    "encrypt": "ENCRYPT",
+    "decrypt": "DECRYPT",
+    "execute": "▶ EXECUTE",
+    "process": "▶ PROCESS (ENCRYPT/DECRYPT)",
+    "plaintext": "Plaintext",
+    "ciphertext": "Ciphertext",
+    "output": "Output",
+    "clickToCopy": "click to copy",
+    "nonAlpha": "Non-alphabetic characters are preserved as-is.",
+    "inputRequired": "Input text is required",
+    "keyRequired": "Key is required",
+    "enterPlaintext": "Enter plaintext...",
+    "enterCiphertext": "Enter ciphertext...",
+    "enterText": "Enter text...",
+    "outputLabel": "Output"
+  },
+  "vigenere": {
+    "name": "Vigenere Cipher",
+    "description": "A polyalphabetic substitution cipher that uses a keyword to shift each letter. Each letter of the key determines a different Caesar shift.",
+    "keyLabel": "Key (letters only)",
+    "keyPlaceholder": "e.g. SECRET",
+    "formulaWhere": "where K = key character index"
+  },
+  "affine": {
+    "name": "Affine Cipher",
+    "description": "A monoalphabetic cipher where each letter is mapped using a linear function. Requires 'a' to be coprime with 26.",
+    "keyA": "Key a (coprime with 26)",
+    "keyB": "Key b (0–25)",
+    "formulaNote": "a must be coprime with 26"
+  },
+  "playfair": {
+    "name": "Playfair Cipher",
+    "description": "A digraph substitution cipher using a 5×5 key matrix. J is merged with I. Encrypts pairs of letters using row, column, or rectangle rules.",
+    "keyLabel": "Key",
+    "matrixLabel": "Key Matrix (5×5)",
+    "ruleRow": "Same row: shift right (+1)",
+    "ruleCol": "Same col: shift down (+1)",
+    "ruleRect": "Rectangle: swap columns"
+  },
+  "hill": {
+    "name": "Hill Cipher",
+    "description": "A polygraphic substitution cipher based on linear algebra. Uses matrix multiplication to encrypt blocks of letters. Key matrix must be invertible mod 26.",
+    "presetLabel": "Preset Keys",
+    "matrixLabel": "Key Matrix (2×2, values 0–25)",
+    "formulaNote": "K must be invertible mod 26",
+    "detLabel": "det"
+  },
+  "enigma": {
+    "name": "Enigma Machine",
+    "description": "A simulation of the WWII German Enigma cipher machine with 3 rotors, a reflector (Reflector B), and a plugboard. Encryption = Decryption (symmetric).",
+    "rotorConfig": "Rotor Configuration",
+    "rotorLabel": "Rotor",
+    "startPos": "Start Pos",
+    "ring": "Ring (0-25)",
+    "plugboard": "Plugboard (letter pairs, space-separated e.g. \"AB CD EF\")",
+    "inputLabel": "Input Text (same settings for encrypt & decrypt)",
+    "inputPlaceholder": "Enter text... (non-alpha characters removed)",
+    "warning": "⚠ Use same rotor settings and positions to decrypt",
+    "forward": "Plugboard → Rotors (R→L) → Reflector → Rotors (L→R) → Plugboard",
+    "stepping": "Rotors step before each character",
+    "selfInverse": "Enigma is self-inverse: use same settings to decrypt"
+  },
+  "history": {
+    "title": "Operation History",
+    "poweredBy": "Powered by Supabase",
+    "noHistory": "No history yet",
+    "noHistoryDesc": "Encrypt or decrypt something using any cipher tab above. Results will be logged here automatically.",
+    "envHint": "Make sure NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY are set in .env.local",
+    "refresh": "↻ Refresh",
+    "loading": "Loading history...",
+    "showing": "Showing {count} operations",
+    "updated": "Updated",
+    "colCipher": "Cipher",
+    "colOp": "Op",
+    "colPlain": "Plaintext",
+    "colCipher2": "Ciphertext",
+    "colTime": "Time",
+    "opEnc": "↑ ENC",
+    "opDec": "↓ DEC"
+  },
+  "splash": {
+    "bootLines": [
+      "CIPHERLAB OS v1.0.0 [Build 20250101]",
+      "Initializing cryptographic engine...",
+      "Loading Vigenere module............. OK",
+      "Loading Affine module............... OK",
+      "Loading Playfair module............. OK",
+      "Loading Hill matrix module.......... OK",
+      "Loading Enigma rotor simulation..... OK",
+      "Connecting to Supabase vault........ OK",
+      "CRT display driver loaded.",
+      "All systems operational.",
+      "",
+      ">> CIPHERLAB READY"
+    ],
+    "allSystems": "All systems nominal",
+    "enter": "▶   ENTER CIPHERLAB",
+    "subtitle": "Semester Even 2025/2026 · Classical Cryptography"
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "deployedOn": "By",
+    "by": "Azzam"
+  },
+  "lang": {
+    "switchLabel": "Language",
+    "en": "English",
+    "id": "Indonesian"
+  }
+}

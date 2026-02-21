@@ -1,7 +1,7 @@
 # CipherLab — Classical Cryptography Suite
 
 Web-based calculator untuk enkripsi dan dekripsi menggunakan algoritma kriptografi klasik.
-Dibuat untuk tugas proyek **Kriptografi Klasik — Semester Genap 2025/2026**.
+Dibuat untuk tugas proyek **Mata Kuliah Kriptografi**.
 
 ## Fitur
 
@@ -16,7 +16,7 @@ Dibuat untuk tugas proyek **Kriptografi Klasik — Semester Genap 2025/2026**.
 ## Tech Stack
 
 - **Frontend**: Next.js 14 (App Router) + TypeScript
-- **Styling**: Tailwind CSS (Terminal / CRT aesthetic)
+- **Styling**: Tailwind CSS
 - **Database**: Supabase (history log)
 - **Hosting**: Vercel
 
@@ -56,14 +56,6 @@ npm run dev
 
 Buka [http://localhost:3000](http://localhost:3000)
 
-## Deploy ke Vercel
-
-1. Push code ke GitHub
-2. Import project di [vercel.com](https://vercel.com)
-3. Tambahkan environment variables di Vercel dashboard:
-   - `NEXT_PUBLIC_SUPABASE_URL`
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-4. Deploy!
 
 ## Contoh Penggunaan
 

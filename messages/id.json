@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "online": "ONLINE",
+    "intro": "INTRO"
+  },
+  "tabs": {
+    "history": "Riwayat"
+  },
+  "banner": {
+    "activeModule": "Modul Aktif"
+  },
+  "cipher": {
+    "algorithm": "Algoritma",
+    "formula": "Rumus",
+    "encrypt": "ENKRIPSI",
+    "decrypt": "DEKRIPSI",
+    "execute": "▶ JALANKAN",
+    "process": "▶ PROSES (ENKRIPSI/DEKRIPSI)",
+    "plaintext": "Teks Asli",
+    "ciphertext": "Teks Sandi",
+    "output": "Hasil",
+    "clickToCopy": "klik untuk salin",
+    "nonAlpha": "Karakter non-alfabet dipertahankan.",
+    "inputRequired": "Teks input wajib diisi",
+    "keyRequired": "Kunci wajib diisi",
+    "enterPlaintext": "Masukkan teks asli...",
+    "enterCiphertext": "Masukkan teks sandi...",
+    "enterText": "Masukkan teks...",
+    "outputLabel": "Hasil"
+  },
+  "vigenere": {
+    "name": "Sandi Vigenere",
+    "description": "Sandi substitusi polialfabetik yang menggunakan kata kunci untuk menggeser setiap huruf. Setiap huruf kunci menentukan pergeseran Caesar yang berbeda.",
+    "keyLabel": "Kunci (hanya huruf)",
+    "keyPlaceholder": "misal: RAHASIA",
+    "formulaWhere": "K = indeks karakter kunci"
+  },
+  "affine": {
+    "name": "Sandi Affine",
+    "description": "Sandi monoalfabetik di mana setiap huruf dipetakan menggunakan fungsi linear. Nilai 'a' harus koprima dengan 26.",
+    "keyA": "Kunci a (koprima dengan 26)",
+    "keyB": "Kunci b (0–25)",
+    "formulaNote": "a harus koprima dengan 26"
+  },
+  "playfair": {
+    "name": "Sandi Playfair",
+    "description": "Sandi substitusi digraf menggunakan matriks kunci 5×5. J digabung dengan I. Mengenkripsi pasangan huruf menggunakan aturan baris, kolom, atau persegi panjang.",
+    "keyLabel": "Kunci",
+    "matrixLabel": "Matriks Kunci (5×5)",
+    "ruleRow": "Baris sama: geser kanan (+1)",
+    "ruleCol": "Kolom sama: geser bawah (+1)",
+    "ruleRect": "Persegi panjang: tukar kolom"
+  },
+  "hill": {
+    "name": "Sandi Hill",
+    "description": "Sandi polygrafik berbasis aljabar linear. Menggunakan perkalian matriks untuk mengenkripsi blok huruf. Matriks kunci harus dapat dibalik mod 26.",
+    "presetLabel": "Kunci Preset",
+    "matrixLabel": "Matriks Kunci (2×2, nilai 0–25)",
+    "formulaNote": "K harus dapat dibalik mod 26",
+    "detLabel": "det"
+  },
+  "enigma": {
+    "name": "Mesin Enigma",
+    "description": "Simulasi mesin sandi Enigma Jerman dari Perang Dunia II dengan 3 rotor, reflektor (Reflektor B), dan papan colokan. Enkripsi = Dekripsi (simetris).",
+    "rotorConfig": "Konfigurasi Rotor",
+    "rotorLabel": "Rotor",
+    "startPos": "Posisi Awal",
+    "ring": "Cincin (0-25)",
+    "plugboard": "Papan Colokan (pasangan huruf, pisahkan spasi misal \"AB CD EF\")",
+    "inputLabel": "Teks Input (gunakan pengaturan sama untuk dekripsi)",
+    "inputPlaceholder": "Masukkan teks... (karakter non-alfa dihapus)",
+    "warning": "⚠ Gunakan pengaturan rotor yang sama untuk dekripsi",
+    "forward": "Colokan → Rotor (K→K) → Reflektor → Rotor (K→K) → Colokan",
+    "stepping": "Rotor bergerak sebelum setiap karakter",
+    "selfInverse": "Enigma bersifat self-inverse: gunakan pengaturan sama untuk dekripsi"
+  },
+  "history": {
+    "title": "Riwayat Operasi",
+    "poweredBy": "Didukung Supabase",
+    "noHistory": "Belum ada riwayat",
+    "noHistoryDesc": "Enkripsi atau dekripsi sesuatu menggunakan tab sandi di atas. Hasilnya akan dicatat otomatis.",
+    "envHint": "Pastikan NEXT_PUBLIC_SUPABASE_URL dan NEXT_PUBLIC_SUPABASE_ANON_KEY sudah diatur di .env.local",
+    "refresh": "↻ Muat Ulang",
+    "loading": "Memuat riwayat...",
+    "showing": "Menampilkan {count} operasi",
+    "updated": "Diperbarui",
+    "colCipher": "Sandi",
+    "colOp": "Op",
+    "colPlain": "Teks Asli",
+    "colCipher2": "Teks Sandi",
+    "colTime": "Waktu",
+    "opEnc": "↑ ENC",
+    "opDec": "↓ DEC"
+  },
+  "splash": {
+    "bootLines": [
+      "CIPHERLAB OS v1.0.0 [Build 20250101]",
+      "Inisialisasi mesin kriptografi...",
+      "Memuat modul Vigenere.............. OK",
+      "Memuat modul Affine................ OK",
+      "Memuat modul Playfair.............. OK",
+      "Memuat modul matriks Hill.......... OK",
+      "Memuat simulasi rotor Enigma....... OK",
+      "Menghubungkan ke vault Supabase.... OK",
+      "Driver layar CRT dimuat.",
+      "Semua sistem berjalan normal.",
+      "",
+      ">> CIPHERLAB SIAP"
+    ],
+    "allSystems": "Semua sistem normal",
+    "enter": "▶   MASUK KE CIPHERLAB",
+    "subtitle": "Mata Kuliah Kriptografi"
+  },
+  "footer": {
+    "builtWith": "Dibuat dengan",
+    "deployedOn": "Di-Buat oleh",
+    "by": "Azzam"
+  },
+  "lang": {
+    "switchLabel": "Bahasa",
+    "en": "Inggris",
+    "id": "Indonesia"
+  }
+}

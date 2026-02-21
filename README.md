@@ -1,7 +1,11 @@
 # CipherLab — Classical Cryptography Suite
 
 Web-based calculator untuk enkripsi dan dekripsi menggunakan algoritma kriptografi klasik.
+<<<<<<< HEAD
 Dibuat untuk tugas proyek **Mata Kuliah Kriptografi**.
+=======
+Dibuat untuk tugas proyek **Kriptografi**.
+>>>>>>> 78fd078657dd0e3998d8eaecd25289d817972a12
 
 ## Fitur
 
@@ -16,8 +20,13 @@ Dibuat untuk tugas proyek **Mata Kuliah Kriptografi**.
 ## Tech Stack
 
 - **Frontend**: Next.js 14 (App Router) + TypeScript
+<<<<<<< HEAD
 - **Styling**: Tailwind CSS
 - **Database**: Supabase (history log)
+=======
+- **Styling**: Tailwind CSS 
+- **Database**: Supabase
+>>>>>>> 78fd078657dd0e3998d8eaecd25289d817972a12
 - **Hosting**: Vercel
 
 ## Cara Menjalankan Lokal
@@ -89,7 +98,7 @@ Buka [http://localhost:3000](http://localhost:3000)
 ```
 src/
 ├── app/
-│   ├── page.tsx          # Main page dengan tab navigation
+│   ├── page.tsx          
 │   ├── layout.tsx        # Root layout
 │   └── globals.css       # Terminal theme CSS
 ├── components/

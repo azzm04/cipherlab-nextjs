@@ -5,7 +5,7 @@ Web-based calculator untuk enkripsi dan dekripsi menggunakan algoritma kriptogra
 Dibuat untuk tugas proyek **Mata Kuliah Kriptografi**.
 =======
 Dibuat untuk tugas proyek **Kriptografi**.
->>>>>>> 78fd078657dd0e3998d8eaecd25289d817972a12
+
 
 ## Fitur
 

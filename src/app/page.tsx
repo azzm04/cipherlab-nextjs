@@ -147,7 +147,7 @@ export default function Home() {
           <div className="mt-1">
             {t("footer.builtWith")} <span className="text-terminal-green">Next.js</span> ·{" "}
             <span className="text-terminal-cyan">Supabase</span> · {t("footer.deployedOn")}{" "}
-            <span className="text-terminal-amber">Vercel</span>
+            <span className="text-terminal-amber">Azzam</span>
           </div>
         </footer>
       </div>
